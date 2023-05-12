@@ -6,11 +6,13 @@ namespace AlgorythmusApp.Models
     {
         [Key]
         public int TypeId { get; set; }   // Primary Key
+
         public string TypeName { get; set; }
         public enum Clan
         {
             Clan1,
-            Clan2
+            Clan2,
+            Clan3
         }
 
 
