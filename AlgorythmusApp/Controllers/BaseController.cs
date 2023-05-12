@@ -44,4 +44,6 @@ namespace AlgorythmusApp.Controllers
             return test;
         }
     }
+
+    public class 
 }
