@@ -14,7 +14,7 @@ namespace AlgorythmusApp.Controllers
         public void Seed()
         {
             Type Silo = new Type(1, "Silo");
-            Type Harvester = new Type(2, "Harvester");
+            // Type Harvester = new Type(2, "Harvester");
         }
     }
 }
