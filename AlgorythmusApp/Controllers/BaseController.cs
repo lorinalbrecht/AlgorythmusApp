@@ -9,4 +9,6 @@ namespace AlgorythmusApp.Controllers
             return View();
         }
     }
+
+    public class 
 }
