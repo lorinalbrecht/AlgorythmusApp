@@ -2,7 +2,7 @@
 
 namespace AlgorythmusApp.Models
 {
-    public class Type
+    public class BuildingType
     {
         [Key]
         public int TypeId { get; set; }   // Primary Key
@@ -18,7 +18,7 @@ namespace AlgorythmusApp.Models
         */
 
         // Constructor
-        public Type(int Id, string Name)
+        public BuildingType(int Id, string Name)
         {
             TypeId = Id;
             TypeName = Name;

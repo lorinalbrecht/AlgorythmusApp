@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AlgorythmusApp.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace AlgorythmusApp.Controllers
 {
-    public class TypeController : Controller
+    public class BuildingTypeController : Controller
     {
         public IActionResult Index()
         {
@@ -13,8 +14,8 @@ namespace AlgorythmusApp.Controllers
         // Person person1 = new Person("Leopold", 6);
         public void Seed()
         {
-            Type Silo = new Type(1, "Silo");
-            // Type Harvester = new Type(2, "Harvester");
+            BuildingType Silo = new(1, "Silo");
+            BuildingType Harvester = new(2, "Harvester");
         }
     }
 }
