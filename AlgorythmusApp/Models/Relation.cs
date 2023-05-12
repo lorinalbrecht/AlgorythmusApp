@@ -8,6 +8,10 @@ namespace AlgorythmusApp.Models
         [Key]
         public int RelationId { get; set; }   // Primary Key
 
+        public int Production { get; set; }
+        public int CostPower { get; set; }
+        public int CostTiberium { get; set; }
+
         public int FkLevel { get; set; }    // Foreign Key Level
         public int FkType { get; set; }     // Foreign Key Type
 

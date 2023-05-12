@@ -8,5 +8,12 @@ namespace AlgorythmusApp.Controllers
         {
             return View();
         }
+
+        public decimal CalcReturnOfInvestment()
+        {
+            // Formel: Produktion - Investment
+            decimal test = 2.3m;
+            return test;
+        }
     }
 }
