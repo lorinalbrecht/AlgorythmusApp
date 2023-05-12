@@ -19,6 +19,6 @@ namespace AlgorythmusApp.Controllers
                                    { 71, 72, 73, 74, 75, 76, 77, 78, 79 },
                                    { 81, 82, 83,84, 85, 86, 87, 88, 89 } };
 
-        BuildingInBase Silo1 = new BuildingInBase( 1, 3, 4, 8, 2, 5);
+        BuildingInBase Silo1 = new( 1, 3, 4, 8, 2, 5);
     }
 }
