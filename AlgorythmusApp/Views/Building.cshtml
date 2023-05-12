@@ -1,0 +1,58 @@
+﻿@model AlgorythmusApp.Models.BuildingInBase
+
+@{
+    ViewData["Title"] = "Building";
+}
+
+<h1>Building</h1>
+
+<h4>BuildingInBase</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Building">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="BuildingInBaseId" class="control-label"></label>
+                <input asp-for="BuildingInBaseId" class="form-control" />
+                <span asp-validation-for="BuildingInBaseId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PositionX" class="control-label"></label>
+                <input asp-for="PositionX" class="form-control" />
+                <span asp-validation-for="PositionX" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PositionY" class="control-label"></label>
+                <input asp-for="PositionY" class="form-control" />
+                <span asp-validation-for="PositionY" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FkBase" class="control-label"></label>
+                <input asp-for="FkBase" class="form-control" />
+                <span asp-validation-for="FkBase" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FkLevel" class="control-label"></label>
+                <input asp-for="FkLevel" class="form-control" />
+                <span asp-validation-for="FkLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FkType" class="control-label"></label>
+                <input asp-for="FkType" class="form-control" />
+                <span asp-validation-for="FkType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
