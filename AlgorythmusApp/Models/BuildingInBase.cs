@@ -27,5 +27,12 @@ namespace AlgorythmusApp.Models
         // Foreign Key for Type
         [ForeignKey("FkType")]
         public Type Type { get; set; }
+
+
+        // Constructor
+        public BuildingInBase()
+        {
+
+        }
     }
 }
