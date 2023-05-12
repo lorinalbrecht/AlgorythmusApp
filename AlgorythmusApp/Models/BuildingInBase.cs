@@ -8,7 +8,7 @@ namespace AlgorythmusApp.Models
         [Key]
         public int BuildingInBaseId { get; set; }   // Primary Key
 
-        public string PositionX { get; set; }
+        public int PositionX { get; set; }
         public int PositionY { get; set; }
 
         public int FkBase { get; set; }     // Foreign Key Base
@@ -30,9 +30,14 @@ namespace AlgorythmusApp.Models
 
 
         // Constructor
-        public BuildingInBase()
+        public BuildingInBase(int Id, int X, int Y, int Base, int Level, int Type)
         {
-
+            BuildingInBaseId = Id;
+            PositionX = X;
+            PositionY = Y;
+            FkBase = Base;
+            FkLevel = Level;
+            FkType = Type;
         }
     }
 }
